@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-icon">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+        <div class="dropdown">
+            <div class="dropdown-header" onclick="toggleDropdown()">
+                <span>▼ ALUMNI</span>
+            </div>
+            <div class="dropdown-content">
+                <div class="dropdown-item" onclick="toggleSubmenu(this)">Događaji
+                    <div class="submenu">
+                        <div class="submenu-item">Kalendar događaja</div>
+                        <div class="submenu-item">Prijava za tribinu</div>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="toggleSubmenu(this)">Novosti
+                    <div class="submenu">
+                        <div class="submenu-item">Pregled članaka</div>
+                        <div class="submenu-item">Podijeli članak</div>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="toggleSubmenu(this)">Galerija
+                    <div class="submenu">
+                        <div class="submenu-item">Snimke s eventa</div>
+                        <div class="submenu-item">Galerija slika</div>
+                    </div>
+                </div>
+                <div class="dropdown-item" onclick="toggleSubmenu(this)">Mentorstvo
+                    <div class="submenu">
+                        <div class="submenu-item">Informacije</div>
+                        <div class="submenu-item">Prijavi se</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
