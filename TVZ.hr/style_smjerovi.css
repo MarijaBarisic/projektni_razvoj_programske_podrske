@@ -1,31 +1,68 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-#logo{
+
+#logo {
   max-width: 70px;
 }
-.banner_elektrotehnika{
+
+#banner_elektrotehnika {
   background-image: url(Images/Elektrotehnika.png);
+}
+
+.banner {
   display: flex;
   flex-direction: column;
   padding-top: 220px;
   padding-bottom: 220px;
 }
+
 #naslov_elektrohenika {
+  background-color: #e63947a4;
+}
+
+.naslov {
   font-size: 7vw;
   padding: 10px;
   color: white;
-  background-color: #e63947a4;
   border-radius: 20px;
+  text-align: center; /* Centriranje teksta unutar h1 */
 }
 
+#navigacija_elektrotehnika {
+  background-color: #E63946;
+}
 
-@media screen and (max-width: 780px){
-  .banner_elektrotehnika{
-    background-image: url(Images/Elektrotehnika.png);
-    display: flex;
-    flex-direction: column;
+.navigacija_smjerovi ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigacija_smjerovi li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navigacija_smjerovi a {
+  color: #000;
+  text-decoration: none;
+  font-size: 70px;
+}
+.navigacija_smjerovi p{
+  text-align: center;
+  font-size: 18px;
+}
+.navigacija_smjerovi a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .banner {
     padding-top: 150px;
     padding-bottom: 150px;
   }
