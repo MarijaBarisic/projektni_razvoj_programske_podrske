@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
 }
-
+.elektrotehnika{
+  background-color: #F6CECE;
+}
 #logo {
   max-width: 70px;
 }
@@ -10,7 +12,9 @@
 #banner_elektrotehnika {
   background-image: url(Images/Elektrotehnika.png);
 }
-
+.navbar {
+  background-color: #e63947a4;
+}
 .banner {
   display: flex;
   flex-direction: column;
@@ -51,8 +55,10 @@
 .navigacija_smjerovi a {
   color: #000;
   text-decoration: none;
-  font-size: 80px;
+  font-size: 60px;
+  transition: color 0.3s ease;
 }
+
 .navigacija_smjerovi p{
   text-align: center;
   font-size: 18px;
@@ -65,14 +71,17 @@
   text-align: center;
   margin: 50px auto;
 }
+section {
+  margin: 20px auto;
+}
 
 .obavijesti article{
-  padding: 20px;
-  margin: 10px auto;
+  margin: 10px;
+  padding: 10px;
   border-radius: 10px;
   word-wrap: break-word;
   background-color: #e63947a4;
-  max-width: 540px;
+  max-width: 420px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -82,9 +91,13 @@
 }
 .obavijesti img{
   max-width: 100%;
-
+  width:400px
 }
-
+.smjerovi{
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
 @media screen and (max-width: 780px) {
   .banner {
     padding-top: 150px;
@@ -92,8 +105,9 @@
   }
   .obavijesti >img{
     width: 100%;
-  }
-  .obavijesti article{
-    max-width: 90%;
-  }
+    }
+    .obavijesti article:hover{
+      box-shadow: none;
+      transform: none;
+    }
 }
