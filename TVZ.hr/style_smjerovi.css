@@ -5,3 +5,28 @@
 #logo{
   max-width: 70px;
 }
+.banner_elektrotehnika{
+  background-image: url(Images/Elektrotehnika.png);
+  display: flex;
+  flex-direction: column;
+  padding-top: 220px;
+  padding-bottom: 220px;
+}
+#naslov_elektrohenika {
+  font-size: 7vw;
+  padding: 10px;
+  color: white;
+  background-color: #e63947a4;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 780px){
+  .banner_elektrotehnika{
+    background-image: url(Images/Elektrotehnika.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
