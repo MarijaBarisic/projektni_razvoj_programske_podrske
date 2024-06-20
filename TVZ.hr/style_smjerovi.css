@@ -23,11 +23,11 @@
 }
 
 .naslov {
-  font-size: 7vw;
+  font-size: 5vw;
   padding: 10px;
   color: white;
   border-radius: 20px;
-  text-align: center; /* Centriranje teksta unutar h1 */
+  text-align: center;
 }
 
 #navigacija_elektrotehnika {
@@ -51,7 +51,7 @@
 .navigacija_smjerovi a {
   color: #000;
   text-decoration: none;
-  font-size: 70px;
+  font-size: 80px;
 }
 .navigacija_smjerovi p{
   text-align: center;
@@ -60,10 +60,40 @@
 .navigacija_smjerovi a:hover {
   color: white;
 }
+.podnaslovi{
+  color:#E63946;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.obavijesti article{
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  word-wrap: break-word;
+  background-color: #e63947a4;
+  max-width: 540px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.obavijesti article:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.obavijesti img{
+  max-width: 100%;
+
+}
 
 @media screen and (max-width: 780px) {
   .banner {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+  .obavijesti >img{
+    width: 100%;
+  }
+  .obavijesti article{
+    max-width: 90%;
   }
 }
