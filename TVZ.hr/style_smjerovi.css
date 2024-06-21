@@ -202,7 +202,27 @@ footer i {
 .podnaslovi_graditeljstvo{
   color:#8D99AE;
 }
-
+.informatika {
+  background-color: #F5FBFF;
+}
+#banner_informatika {
+  background-image: url(Images/Informatika.png);
+}
+.navbar_informatika,
+#naslov_informatika,
+.obavijesti_informatika article,
+.parni_inf,
+.Natjecanja_informatika article{
+  background-color: #b9ddf4ba;
+}
+#navigacija_informatika,
+.neparni_inf,
+.footer_informatika{
+  background-color:#B9DDF4;
+}
+.podnaslovi_informatika{
+  color:#B9DDF4;
+}
 
 
 @media screen and (max-width: 780px) {
