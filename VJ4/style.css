@@ -11,12 +11,12 @@ body {
 .menu {
     display: flex;
     align-items: flex-start;
-    margin: 20px;
+    margin: 25px;
 }
 
 .menu-icon {
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #100f0f;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -74,7 +74,7 @@ body {
     border-radius: 3px;
     margin-top: 5px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(13, 13, 13, 0.2); 
 }
 
 .submenu-item {
