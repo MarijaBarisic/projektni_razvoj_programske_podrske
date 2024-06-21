@@ -15,7 +15,7 @@
   background-image: url(Images/Elektrotehnika.png);
 }
 
-.navbar {
+.navbar_elektrotehnika {
   background-color: #e63947a4;
 }
 
@@ -72,8 +72,11 @@
   color: white;
 }
 
-.podnaslovi {
+.podnaslovi_elektrotehnika {
   color: #E63946;
+}
+
+.podnaslovi {
   text-align: center;
   margin: 50px auto;
 }
@@ -87,12 +90,13 @@ section {
   padding: 10px;
   border-radius: 10px;
   word-wrap: break-word;
-  background-color: #e63947a4;
   max-width: 420px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
+.obavijesti_elektrotehnika article{
+  background-color: #e63947a4;
+}
 .obavijesti article:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
@@ -151,19 +155,22 @@ section {
 .Natjecanja article {
   margin: 20px auto;
   padding: 10px;
-  background-color: #e63947a4;
   border-radius: 10px;
+}
+.Natjecanja_elektortehnika article{
+  background-color: #e63947a4;
 }
 
 footer {
   opacity: 0.7;
   text-align: center;
   display: flex;
-  padding: 10px;
 }
-.lokacija{
-  padding-top: 100px;
+
+.lokacija {
+  padding-top: 90px;
 }
+
 footer i {
   color: #000;
   font-size: 50px;
@@ -173,6 +180,30 @@ footer i {
 .footer_elektrotehnika {
   background-color: #E63946;
 }
+
+.graditeljstvo {
+  background-color: #c3d4f3a0;
+}
+#banner_graditeljstvo {
+  background-image: url(Images/Graditeljstvo.png);
+}
+.navbar_graditeljstvo,
+#naslov_graditeljstvo,
+.obavijesti_graditeljstvo article,
+.parni_grad,
+.Natjecanja_graditeljstvo article{
+  background-color: #8d99aeaf;
+}
+#navigacija_graditeljstvo,
+.neparni_grad,
+.footer_graditeljstvo{
+  background-color:#8D99AE;
+}
+.podnaslovi_graditeljstvo{
+  color:#8D99AE;
+}
+
+
 
 @media screen and (max-width: 780px) {
   .banner {
