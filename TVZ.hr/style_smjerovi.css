@@ -1,7 +1,252 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-#logo{
+
+.elektrotehnika {
+  background-color: #F6CECE;
+}
+
+#logo {
   max-width: 70px;
+}
+
+#banner_elektrotehnika {
+  background-image: url(Images/Elektrotehnika.png);
+}
+
+.navbar_elektrotehnika {
+  background-color: #e63947a4;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 220px;
+  padding-bottom: 220px;
+}
+
+#naslov_elektrohenika {
+  background-color: #e63947a4;
+}
+
+.naslov {
+  font-size: 5vw;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#navigacija_elektrotehnika {
+  background-color: #E63946;
+}
+
+.navigacija_smjerovi ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigacija_smjerovi li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navigacija_smjerovi a {
+  color: #000;
+  text-decoration: none;
+  font-size: 60px;
+  transition: color 0.3s ease;
+}
+
+.navigacija_smjerovi p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.navigacija_smjerovi a:hover {
+  color: white;
+}
+
+.podnaslovi_elektrotehnika {
+  color: #E63946;
+}
+
+.podnaslovi {
+  text-align: center;
+  margin: 50px auto;
+}
+
+section {
+  margin: 20px auto;
+}
+
+.obavijesti article {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+  max-width: 420px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.obavijesti_elektrotehnika article{
+  background-color: #e63947a4;
+}
+.obavijesti article:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+.obavijesti img {
+  max-width: 100%;
+  width: 400px
+}
+
+.smjerovi {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.nastavni_plan_program a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nastavni_plan_program ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nastavni_plan_program li {
+  margin: 20px;
+  padding: 10px;
+}
+
+.neparni_ele {
+  background-color: #E63946;
+}
+
+.parni_ele {
+  background-color: #e63947a4;
+}
+
+.centered-table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.centered-table td {
+  border: 1px solid #000;
+  padding: 10px 60px;
+  text-align: center;
+}
+
+.Natjecanja article {
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Natjecanja_elektortehnika article{
+  background-color: #e63947a4;
+}
+
+footer {
+  opacity: 0.7;
+  text-align: center;
+  display: flex;
+}
+
+.lokacija {
+  padding-top: 90px;
+}
+
+footer i {
+  color: #000;
+  font-size: 50px;
+  padding: 110px 20px;
+}
+
+.footer_elektrotehnika {
+  background-color: #E63946;
+}
+
+.graditeljstvo {
+  background-color: #c3d4f3a0;
+}
+#banner_graditeljstvo {
+  background-image: url(Images/Graditeljstvo.png);
+}
+.navbar_graditeljstvo,
+#naslov_graditeljstvo,
+.obavijesti_graditeljstvo article,
+.parni_grad,
+.Natjecanja_graditeljstvo article{
+  background-color: #8d99aeaf;
+}
+#navigacija_graditeljstvo,
+.neparni_grad,
+.footer_graditeljstvo{
+  background-color:#8D99AE;
+}
+.podnaslovi_graditeljstvo{
+  color:#8D99AE;
+}
+.informatika {
+  background-color: #F5FBFF;
+}
+#banner_informatika {
+  background-image: url(Images/Informatika.png);
+}
+.navbar_informatika,
+#naslov_informatika,
+.obavijesti_informatika article,
+.parni_inf,
+.Natjecanja_informatika article{
+  background-color: #b9ddf4ba;
+}
+#navigacija_informatika,
+.neparni_inf,
+.footer_informatika{
+  background-color:#B9DDF4;
+}
+.podnaslovi_informatika{
+  color:#B9DDF4;
+}
+
+
+@media screen and (max-width: 780px) {
+  .banner {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .obavijesti>img {
+    width: 100%;
+  }
+
+  .obavijesti article:hover {
+    box-shadow: none;
+    transform: none;
+  }
+
+  .centered-table td {
+    border: 1px solid #000;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .centered-table {
+    width: 90%;
+  }
 }
