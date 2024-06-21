@@ -1,0 +1,145 @@
+div img {
+    max-width : 100%
+}
+
+button.btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #007bff;
+}
+
+.col-lg-12 {
+    display: flex;
+    justify-content: center;
+}
+
+.tekst p{
+    max-width: 50%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    width: 300px; 
+    height: auto;
+    margin-bottom: 20px;
+   
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.nav-item:hover {
+    background-color: #d3d3d3;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-header {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d3d3d3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+}
+
+.dropdown-item {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.submenu-item {
+    margin: 5px 0;
+}
+
+.dropdown-item.active .submenu {
+    display: block;
+}
+
+.gallery-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1);
+}
+
+.galerija h5{
+    padding-top: 15px;
+}
+
+.position-relative {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-image {
+    max-width: 80%;
+    height: auto;
+    margin: 0 20px; 
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    margin-right: 20px; 
+}
+
+.right-arrow {
+    margin-left: 20px; 
+}
+
