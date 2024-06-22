@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="slike/tvzlogo.png" alt="TVZ Logo" class="logo">
+        <nav class="nav-menu">
+            <a href="#" class="nav-item">STUDIJI I STUDENTI</a>
+            <a href="#" class="nav-item">@TVZ</a>
+            <a href="#" class="nav-item">NETAKADEMIJA</a>
+            <div class="nav-item dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown()">ALUMNI</div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="navigateTo('dogadaji.html')">Događaji</div>
+                    <div class="dropdown-item" onclick="toggleSubmenu(this)">Novosti
+                        <div class="submenu">
+                            <div class="submenu-item" onclick="navigateTo('novosti.html')">▶ Pregled članaka</div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item" onclick="navigateTo('galerija.html')">Galerija</div>
+                    <div class="dropdown-item" onclick="toggleSubmenu(this)">Mentorstvo
+                        <div class="submenu">
+                            <div class="submenu-item" onclick="navigateTo('mentorstvo.html')">▶ Informacije</div>
+                            <div class="submenu-item" onclick="navigateTo('prijavnicamentor.html')">▶ Prijavi se</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="nav-item">NOVOSTI</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+    
+    <section class="container mentorstvo pt-4">
+        <h1>Informacije o mentorstvu</h1>
+        <div class="row  pb-5">
+            <div class="col-lg-12">
+                <p>Mentorstvo je ključan proces za profesionalni razvoj i osobni rast. Mentor pruža smjernice, 
+                    podršku i znanje, pomažući menteeu da razvije vještine i postigne ciljeve. Kroz redovite 
+                    sastanke i konstruktivnu povratnu informaciju, mentor pomaže menteeu da prepozna svoje 
+                    snage i slabosti te izgradi samopouzdanje. Ovaj odnos obogaćuje obje strane, jer mentor
+                     također uči iz iskustava menteea, razvijajući svoje liderske vještine i proširujući
+                      perspektive. U konačnici, mentorstvo doprinosi stvaranju jače i povezanije zajednice.</p>
+            </div>
+        </div>
+        <div class="row pb-1">
+            <div class="col-lg-4">
+                <img src="slike/uzajamno-mentorstvo.jpg" alt="">
+            </div>
+            <div class="col-lg-8">
+                <p>Efektivno mentorstvo može značajno utjecati na karijeru i osobni razvoj menteea.
+                     Kroz strukturirane razgovore i praktične savjete, mentori pomažu menteeima da prebrode 
+                     izazove i identificiraju prilike za napredak. Mentorstvo ne samo da olakšava prijenos 
+                     znanja, već također pruža emocionalnu podršku i motivaciju. Važno je da mentor i mentee 
+                     razviju odnos povjerenja i otvorene komunikacije, što omogućuje iskrene razgovore 
+                     i konstruktivnu kritiku. Ovakva suradnja stvara temelje za dugoročni uspjeh i
+                      zadovoljstvo na obje strane.</p>
+            </div>
+        </div>
+        <div class="row  pb-5">
+            <div class="col-lg-6">
+                <h3> Gdje se mogu prijaviti?</h3>
+            </div>
+            <div class="col-lg-6">
+                <button class="btn btn-primary" onclick="window.location.href='prijavnicamentor.html'">Prijavi se</button>
+            </div>
+        </div>
+    </section> 
+</body>
+</html>
