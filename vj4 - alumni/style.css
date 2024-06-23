@@ -143,3 +143,46 @@ button.btn:hover {
     margin-left: 20px; 
 }
 
+.zaglavlje {
+    background-color: #112f93;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.zaglavlje h5 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.zaglavlje p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.zaglavlje a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.zaglavlje a:hover {
+    color: #fff;
+}
+
+.zaglavlje .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.zaglavlje .lista {
+    padding-left: 0;
+    list-style: none;
+}
+
+.zaglavlje .lista li {
+    margin-bottom: 15px;
+}
+
+
+
