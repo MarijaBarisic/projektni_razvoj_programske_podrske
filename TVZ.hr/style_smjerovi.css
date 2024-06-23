@@ -224,6 +224,107 @@ footer i {
   color:#B9DDF4;
 }
 
+.racunarstvo {
+  background-color: #E9FFFC;
+}
+#banner_racunarstvo {
+  background-image: url(Images/Racunarstvo.png);
+}
+.navbar_racunarstvo,
+#naslov_racunarstvo,
+.obavijesti_racunarstvo article,
+.parni_rac,
+.Natjecanja_racunarstvo article{
+  background-color: #2a9d90a3;
+}
+#navigacija_racunarstvo,
+.neparni_rac,
+.footer_racunarstvo{
+  background-color:#2A9D8F;
+}
+.footer_racunarstvo{
+  padding-top: 10px;
+}
+.podnaslovi_racunarstvo{
+  color:#2A9D8F;
+}
+
+
+.mehatronika {
+  background-color: #F4DAC5;
+}
+#banner_mehatronika {
+  background-image: url(Images/Mehatronika.png);
+}
+.navbar_mehatronika,
+#naslov_mehatronika,
+.obavijesti_mehatronika article,
+.parni_meh,
+.Natjecanja_mehatronika article{
+  background-color: #f4a361c1;
+}
+#navigacija_mehatronika,
+.neparni_meh,
+.footer_mehatronika{
+  background-color:#F4A261;
+}
+.footer_mehatronika{
+  padding-top: 10px;
+}
+.podnaslovi_mehatronika{
+  color:#F4A261;
+}
+
+
+
+.strojarstvo {
+  background-color: #E8D9FF;
+}
+#banner_strojarstvo {
+  background-image: url(Images/Stojarstvo.png);
+}
+.navbar_strojarstvo,
+#naslov_strojarstvo,
+.obavijesti_strojarstvo article,
+.parni_stro,
+.Natjecanja_strojarstvo article{
+  background-color: #8266aeb6;
+}
+#navigacija_strojarstvo,
+.neparni_stro,
+.footer_strojarstvo{
+  background-color:#8266AE;
+}
+.footer_strojarstvo{
+  padding-top: 10px;
+}
+.podnaslovi_strojarstvo{
+  color:#8266AE;
+}
+
+.posao{
+background-color: #D9E1EF;
+}
+#banner_posao {
+background-image: url(Images/Posao.png);
+}
+#naslov_posao{
+background-color: #00427bb6;
+}
+#navigacija_posao {
+  background-color: #00417B;
+}
+
+.obavijesti_posao article{
+background-color: #00427bb6;
+}
+
+.footer_posao {
+background-color: #00417B;
+color: black;
+padding-top: 10px;
+}
+
 
 @media screen and (max-width: 780px) {
   .banner {
