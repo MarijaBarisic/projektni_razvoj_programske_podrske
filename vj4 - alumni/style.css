@@ -1,5 +1,5 @@
 div img {
-    max-width : 100%
+    max-width: 100%;
 }
 
 button.btn:hover {
@@ -13,7 +13,7 @@ button.btn:hover {
     justify-content: center;
 }
 
-.tekst p{
+.tekst p {
     max-width: 50%;
 }
 
@@ -23,14 +23,13 @@ button.btn:hover {
     align-items: center;
     background-color: #f1f1f1;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-    width: 300px; 
+    width: 300px;
     height: auto;
     margin-bottom: 20px;
-   
 }
 
 .nav-menu {
@@ -47,7 +46,7 @@ button.btn:hover {
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
     position: relative;
 }
@@ -69,7 +68,7 @@ button.btn:hover {
     display: none;
     position: absolute;
     background-color: #d3d3d3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
     border-radius: 5px;
     top: 100%;
@@ -108,7 +107,7 @@ button.btn:hover {
     transform: scale(1.1);
 }
 
-.galerija h5{
+.galerija h5 {
     padding-top: 15px;
 }
 
@@ -122,25 +121,30 @@ button.btn:hover {
 #main-image {
     max-width: 80%;
     height: auto;
-    margin: 0 20px; 
+    margin: 0 20px;
 }
 
 .arrow {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    padding: 10px;
+    padding: 5px;
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
     z-index: 10;
 }
 
+.small-arrow {
+    padding: 5px;
+    font-size: 16px;
+}
+
 .left-arrow {
-    margin-right: 20px; 
+    margin-right: 10px;
 }
 
 .right-arrow {
-    margin-left: 20px; 
+    margin-left: 10px;
 }
 
 .zaglavlje {
@@ -183,6 +187,3 @@ button.btn:hover {
 .zaglavlje .lista li {
     margin-bottom: 15px;
 }
-
-
-
