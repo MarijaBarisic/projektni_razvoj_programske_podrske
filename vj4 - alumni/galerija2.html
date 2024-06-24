@@ -8,41 +8,130 @@
     <title>Galerija</title>
 </head>
 <body>
-    <section class="container pt-4 text-center">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 position-relative">
-                <button class="btn btn-primary arrow left-arrow" onclick="prevImage()">&#8592;</button>
-                <img id="main-image" src="slike/TVZ.jpg" alt="Galerija Slika" class="img-fluid">
-                <button class="btn btn-primary arrow right-arrow" onclick="nextImage()">&#8594;</button>
+    <div class="header">
+        <img src="slike/tvzlogo.png" alt="TVZ Logo" class="logo">
+        <nav class="nav-menu">
+            <a href="#" class="nav-item">STUDIJI I STUDENTI</a>
+            <a href="#" class="nav-item">@TVZ</a>
+            <a href="#" class="nav-item">NETAKADEMIJA</a>
+            <div class="nav-item dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown()">ALUMNI</div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="navigateTo('dogadaji.html')">Događaji</div>
+                    <div class="dropdown-item" onclick="toggleSubmenu(this)">Novosti
+                        <div class="submenu">
+                            <div class="submenu-item" onclick="navigateTo('novosti.html')">▶ Pregled članaka</div>
+                        </div>
+                    </div>
+                    <div class="dropdown-item" onclick="navigateTo('galerija.html')">Galerija</div>
+                    <div class="dropdown-item" onclick="toggleSubmenu(this)">Mentorstvo
+                        <div class="submenu">
+                            <div class="submenu-item" onclick="navigateTo('mentorstvo.html')">▶ Informacije</div>
+                            <div class="submenu-item" onclick="navigateTo('prijavnicamentor.html')">▶ Prijavi se</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a href="#" class="nav-item">NOVOSTI</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+
+    <section class="container pt-4 text-center galerija">
+        <div class="row justify-content-center align-items-center">
+            <button class="btn btn-primary arrow small-arrow left-arrow" onclick="nextImage()">&#8592;</button>
+            <h3 class="col-auto mx-4">TVZ Galerija</h3>
+            <button class="btn btn-primary arrow small-arrow right-arrow" onclick="prevImage()">&#8594;</button>
+        </div>
+        <hr class="crta">
+        <div id="gallery" class="row tekst pb-5">
+            <!-- Images will be injected here by JavaScript -->
         </div>
     </section>
-
     <script>
         const images = [
-            'slike/TVZ.jpg',
-            'slike/cell-phone-1352613_1280.jpg',
-            'slike/music-7238254_1280.jpg',
-            'slike/plans-1867745_1280.jpg',
-            'slike/vijestizastudente-2.jpg'
+            "slike/Slika11.jpg",
+            "slike/Slika12.jpg",
+            "slike/Slika13.jpg",
+            "slike/Slika14.jpg",
+            "slike/Slika15.jpg",
+            "slike/Slika16.jpg",
+            "slike/Slika17.jpg",
+            "slike/Slika18.jpg",
+            "slike/Slika19.jpg",
+            "slike/Slika20.jpg",
+            "slike/Slika21.jpg",
+            "slike/Slika22.jpg",
+            "slike/Slika23.jpg",
+            "slike/Slika24.jpg",
+            "slike/Slika25.jpg",
+            "slike/Slika26.jpg"
         ];
-        
+
         let currentIndex = 0;
 
-        function updateImage() {
-            const mainImage = document.getElementById('main-image');
-            mainImage.src = images[currentIndex];
-        }
-
-        function prevImage() {
-            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-            updateImage();
+        function renderImages() {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            for (let i = 0; i < 3; i++) {
+                const imgIndex = (currentIndex + i) % images.length;
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-lg-4';
+                const img = document.createElement('img');
+                img.src = images[imgIndex];
+                img.className = 'gallery-img img-fluid';
+                colDiv.appendChild(img);
+                gallery.appendChild(colDiv);
+            }
         }
 
         function nextImage() {
-            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-            updateImage();
+            currentIndex = (currentIndex + 1) % images.length;
+            renderImages();
         }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            renderImages();
+        }
+
+        window.onload = renderImages;
     </script>
+
+    <footer class="zaglavlje">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <h5>O nama</h5>
+                    <p>Tehničko veleučilište u Zagrebu (TVZ) osnovano je 1998. godine s ciljem obrazovanja budućih inženjera. TVZ se sastoji od četiri odjela; Elektrotehničkog, Graditeljskog, Informatičko-računarskog i Strojarskog na kojima u ak. godini studira ukupno 4.300 studenata. Studijski programi formirani su kao trogodišnji preddiplomski i dvogodišnji diplomski.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Brzi linkovi</h5>
+                    <ul class="lista">
+                        <li><a href="#">O nama</a></li>
+                        <li><a href="#">Kontaktirajte nas</a></li>
+                        <li><a href="#">Riječ dekana</a></li>
+                        <li><a href="#">Politika privatnosti</a></li>
+                        <li><a href="#">Naše lokacije</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Pratite nas</h5>
+                    <ul class="lista">
+                        <li><a href="#"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-youtube fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>Copyright © 2022 Sva prava pridržana od strane TVZ.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/aeb84312b2.js" crossorigin="anonymous"></script>
 </body>
 </html>
